@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		489DF9B51CBBE2970053EE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DF9B41CBBE2970053EE1E /* AppDelegate.swift */; };
-		489DF9B71CBBE2970053EE1E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DF9B61CBBE2970053EE1E /* FirstViewController.swift */; };
+		489DF9B71CBBE2970053EE1E /* WebUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DF9B61CBBE2970053EE1E /* WebUIViewController.swift */; };
 		489DF9B91CBBE2970053EE1E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DF9B81CBBE2970053EE1E /* SecondViewController.swift */; };
 		489DF9BC1CBBE2970053EE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489DF9BA1CBBE2970053EE1E /* Main.storyboard */; };
 		489DF9BE1CBBE2970053EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489DF9BD1CBBE2970053EE1E /* Assets.xcassets */; };
 		489DF9C11CBBE2970053EE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489DF9BF1CBBE2970053EE1E /* LaunchScreen.storyboard */; };
 		489DF9CC1CBBE2970053EE1E /* WebUI_IP_Address_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DF9CB1CBBE2970053EE1E /* WebUI_IP_Address_ConverterTests.swift */; };
+		489DF9D71CBBE9790053EE1E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DF9D61CBBE9790053EE1E /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +30,7 @@
 /* Begin PBXFileReference section */
 		489DF9B11CBBE2970053EE1E /* WebUI IP Address Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebUI IP Address Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		489DF9B41CBBE2970053EE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		489DF9B61CBBE2970053EE1E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		489DF9B61CBBE2970053EE1E /* WebUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUIViewController.swift; sourceTree = "<group>"; };
 		489DF9B81CBBE2970053EE1E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		489DF9BB1CBBE2970053EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		489DF9BD1CBBE2970053EE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		489DF9C71CBBE2970053EE1E /* WebUI IP Address ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebUI IP Address ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		489DF9CB1CBBE2970053EE1E /* WebUI_IP_Address_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUI_IP_Address_ConverterTests.swift; sourceTree = "<group>"; };
 		489DF9CD1CBBE2970053EE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489DF9D61CBBE9790053EE1E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 		489DF9B31CBBE2970053EE1E /* WebUI IP Address Converter */ = {
 			isa = PBXGroup;
 			children = (
+				489DF9D61CBBE9790053EE1E /* Reachability.swift */,
 				489DF9B41CBBE2970053EE1E /* AppDelegate.swift */,
-				489DF9B61CBBE2970053EE1E /* FirstViewController.swift */,
+				489DF9B61CBBE2970053EE1E /* WebUIViewController.swift */,
 				489DF9B81CBBE2970053EE1E /* SecondViewController.swift */,
 				489DF9BA1CBBE2970053EE1E /* Main.storyboard */,
 				489DF9BD1CBBE2970053EE1E /* Assets.xcassets */,
@@ -202,7 +205,8 @@
 			files = (
 				489DF9B91CBBE2970053EE1E /* SecondViewController.swift in Sources */,
 				489DF9B51CBBE2970053EE1E /* AppDelegate.swift in Sources */,
-				489DF9B71CBBE2970053EE1E /* FirstViewController.swift in Sources */,
+				489DF9D71CBBE9790053EE1E /* Reachability.swift in Sources */,
+				489DF9B71CBBE2970053EE1E /* WebUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +398,7 @@
 				489DF9D21CBBE2970053EE1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		489DF9D31CBBE2970053EE1E /* Build configuration list for PBXNativeTarget "WebUI IP Address ConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +407,7 @@
 				489DF9D51CBBE2970053EE1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
