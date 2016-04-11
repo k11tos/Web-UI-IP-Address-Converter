@@ -90,7 +90,7 @@ class WebUIViewController: UIViewController, UIWebViewDelegate {
             
         }
     }
-    
+       
     func updateSiteWhenNotReachable(reachability: Reachability) {
         loadWebSite("")
         networkStatusLabel.text = "Not connected"
